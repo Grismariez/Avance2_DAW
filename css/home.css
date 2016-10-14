@@ -1,0 +1,726 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+
+/*Reglas de estilo basicas*/
+
+
+*{
+    margin: 0;
+}
+
+body{
+	background: #ffffff;
+	font-size: 18px;
+	/*line-height: 32px;*/
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+h1{
+	font-size: 30px;
+	line-height: 34px;
+	text-align: center;
+	color: #fff;
+}
+
+h2{
+	text-align: center;
+	color: #AEB6BF;
+	padding: 5%;
+}
+
+h3{
+	font-size: 30px;
+	line-height: 34px;
+	text-align: center;
+	color: #fff;
+	text-align: center;
+	margin: 2%;
+	color: #AEB6BF;
+	font-family: 'Poiret One', cursive;
+}
+
+h3 a{
+	color: #fff;
+}
+a{
+	color: #fff;
+}
+h1{
+	margin-top: 100px;
+	text-align: center;
+	font-size: 60px;
+	line-height: 70px;
+	font-family: 'Roboto', sans-serif;
+}
+p{
+	text-align: center;
+}
+label.toggle, [id^=drop]{
+	/*Oculto el icono con clase toggle y todos los checkbox
+	cuyo id comience con la cadena "drop"*/
+	display: none;
+}
+/*Reglas de estilo para el menu*/
+nav{
+	margin: 0;
+	padding: 0;
+	background-color: #F8C471;
+    z-index: 1;
+	/*Obligo a que el nav cubra a los elementos que floten dentro de él*/
+}
+#logo{
+	display: block;
+	padding: 0 30px;
+	float: left;
+	font-size: 20px;
+	line-height: 60px;
+    color: #fff;
+}
+nav ul{
+	float: right;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+}
+nav ul li{
+	margin: 0px;
+	display: inline-block;
+	float: left;
+	background-color:  #F8C471;
+    z-index: 1;
+}
+nav a{
+	display: block;
+	padding: 0 20px;
+	color: #fff;
+	font-size: 20px;
+	line-height: 60px;
+	text-decoration: none;
+}
+nav a:hover{
+	background-color: #FAD7A0;
+    text-decoration: none;
+    color: #fff;
+    transition: .7s;
+}
+
+nav ul ul{
+	display: none;
+	position: absolute;
+	top: 60px;
+}
+nav ul li:hover>ul{
+	display: block;
+    color: #fff;
+    transition: .7s;
+}
+/*Elementos del segundo nivel*/
+nav ul ul li{
+	width: 170px;
+	float: none;
+	display: block;
+	position: relative;
+	transition: .7s;
+	/*Se muestran abajo del padre*/
+}
+
+/*Elementos tercer nivel*/
+nav ul ul ul li{
+	position: relative;
+	top: -60px;
+	left: 170px;
+	/*El primer elemento se muestra a la misma altura del padre y
+	a la derecha de él*/
+}
+nav:after{
+	content: "";
+	display: block;
+	clear: both;
+	transition: .7s;
+}
+
+/* ----- SLIDER ----- */ 
+
+@keyframes slider {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+}
+
+section.contenedor-slider {
+	z-index: -1;
+	overflow: hidden;
+}
+section.contenedor-slider figure img {
+	width: 20%; float: left;
+}
+
+section.contenedor-slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slider infinite; 
+}
+
+
+.derecha{
+	width: 50%;
+	float: right;
+	/*background-color: red;*/
+
+}
+
+.izquierda{
+	width: 50%;
+	float: left;
+	/*background-color: black;*/
+}
+
+video{
+	width: 70%;
+	margin: 4.3%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+
+
+.derecha img{
+	width: 40%;
+	float: left;
+	display: inline-block;
+	/*margin: 5%;*/
+	padding: 5%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+
+}
+
+/* ----- FOOTER ---- */
+
+section#sec-pie{
+	width: 100%;
+	overflow: hidden;
+    background-color: #F8C471;
+}
+
+section .contenido-pie{
+	height: auto;
+	width: 33.33%;
+	background: #F8C471;
+	float: left;
+	display: inline-block;
+	text-align: center;
+	text-align: justify;
+	background-color: #F8C471;
+	color: #666; 
+}
+
+.images{
+	padding-left: 38%;
+	width: 60%;
+}
+
+.images img{
+	width: 25px;
+}
+
+section .contenido-pie p{
+
+	padding: 5%;
+	text-align: center;
+	color: #ffffff;
+}
+
+footer{
+	background: #F8C471;
+}
+
+footer p{
+	text-align: center;
+	color: #ffffff;
+	padding: 3%;
+}
+
+footer h3 {
+	color: #ffffff;
+}
+
+hr{
+	background: #ecf0f1;
+	opacity: 0;
+	margin-bottom: 3%;
+}
+
+footer a{
+	text-decoration: none;
+}
+
+
+/* ----- FORMULARIOS Y CONTACTO -----*/
+
+form{
+ 	padding-top: 5%;
+ 	padding-bottom: 5%;
+}
+
+
+form input{
+	width: 46%;
+	margin-left: 26%;
+	margin-right: 24%;
+	padding: 1%;
+	color: #f39c12;
+	margin-top: 0.5%;
+	margin-bottom: 3%;
+	border: 1px solid #f39c12;
+	font-family: 'Raleway', sans-serif;
+}
+
+label{
+	text-align: center;
+}
+
+textarea{
+	width: 46%;
+	margin-left: 26%;
+	margin-right: 24%;
+	padding: 1%;
+	color: #6d6d6d;
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
+	border: 1px solid #f39c12;
+	font-family: 'Raleway', sans-serif;
+	color: #f39c12;
+}
+
+button{
+	width: 20%;
+	margin-left: 40%;
+	margin-right: 40%;
+	margin-bottom: 1%;
+	margin-top: 1%;
+	padding: 1%;
+	background: #ffffff;
+	color: #6d6d6d;
+	border: 1px solid #f39c12;
+}
+
+button:hover{
+	background: #ecf0f1;
+	color: #f39c12;
+	transition: .7s;
+}
+
+
+#infor-derecha{
+	width: 60%;
+	float: right;
+	color: #7f8c8d;
+}
+
+#infor-derecha img{
+	width: 90%;
+	float: right;
+}
+
+#infor-izquierda{
+	width: 40%;
+	display: block;
+	float: left;
+}
+
+#infor-izquierda img{
+	margin-left: 19%;
+	margin-right: 19%;
+	margin-top: 10%;
+	width: 60%;
+}
+
+#infor-izquierda p{
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 5%;
+	padding-top: 5%;
+	color: #7f8c8d;
+}
+
+/* ---- ACERCA DE ---- */
+
+.creadores{
+	width: 20%;
+	float: left;
+	display: inline-block;
+}
+
+
+.creadores h2{
+	color: #AEB6BF;
+	font-size: 20px;
+	text-align: center;
+	padding: 5%;
+}
+
+.creadores p{
+	color: #AEB6BF;
+	text-align: justify;
+	padding: 8%;
+}
+
+.creadores img{
+	opacity: 0.6;
+	width: 90%;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+.creadores img:hover{
+	opacity: 1;
+}
+
+.blur{
+	width: 100%;
+  	opacity: 0.6;
+  	margin-top: 2%;
+
+ }
+
+.content p{
+	color: black;
+	padding: 10%;
+	text-align: justify;
+}
+
+/*  ---- PERSONAJES ---- */ 
+
+.characters{
+	margin-left: 5%;
+	margin-right: 5%;
+
+}
+
+.personajes{
+	width: 33.3%;
+	float: left;
+	display: inline-block;
+
+}
+
+.personajes img{
+	width: 60%;
+	margin-right: 20%;
+	margin-left: 20%;
+	opacity: 0.7;
+}
+
+.personajes img:hover{
+	opacity: 1;
+}
+
+.personajes p{
+	color: #AEB6BF;
+}
+
+.content h2{
+	color: #AEB6BF;
+	text-align: center;
+	margin-top: 5%;
+}
+
+/* --- REGLAS --- */
+
+div.subapartado{
+	width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+	min-height:50px;
+	background-color: #F8C471;
+	transition: 1s;
+}
+
+div.titulo{
+	width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+	background-color: #F8C471;
+	overflow: hidden;
+	border-bottom: 1px solid #ffffff;
+}
+
+p.titulo{
+	margin:2%;
+	color: white;
+}
+
+div.info{
+	width: 100%;
+	background-color: #f5f5f5;
+	overflow: hidden;
+	transition: 1s;
+}
+
+p.info{
+	margin:20px;
+	text-align: center;
+	color:#4f4f4f;
+}
+
+div.subapartado:hover div.info{
+
+	height:180px;
+    transition: 1s;
+
+}
+
+/*Media Queries
+----------------------------------*/
+@media all and (max-width: 768px){
+
+	/*Media queries para tablet y smartphones.*/
+	*{
+		margin: 0;
+	}
+
+	nav{ margin: 0;
+    }
+	
+    #logo{
+		display: inline-block;
+		padding: 0 0 0 20px;
+		text-align: center;
+	}
+	nav ul li{
+		display: block;
+		width: 100%;
+		border-top: 1px solid white;
+	}
+	label.toggle{
+		display: block;
+		background-color: #F8C471;
+		padding: 0 20px;
+		color: #fff;
+		font-size: 20px;
+		line-height: 60px;
+		text-decoration: none;
+		border: none;
+		cursor: pointer;
+	}
+	label.icono{
+		background-color: #F8C471;
+		border-left: 1px solid white;
+		display: inline-block;
+		float: right;
+	}
+	.menu{
+		/*Oculto el menu de navegacion*/
+		display: none;
+	}
+	[id^=drop]:checked + ul{
+		/*Muestro la lista adyacente al checkbox activo
+		El checkbox debe tener un id que comience con "drop"*/
+		transition: .7s;
+		display: block;
+		width: 100%;
+	}
+	.toggle + a{
+		display: none;
+	}
+	/*Para la lista de los niveles internos*/
+	nav ul ul{
+		float: none;
+		position: static;
+		color: #ffffff;
+	}
+    
+    nav ul ul:hover{
+        background-color:#FAD7A0;
+    }
+	/*Para los elementos de los niveles internos*/
+	nav ul ul li{
+		display: block;
+		width: 100%;
+	}
+	/*Para los elementos del tercer nivel*/
+	nav ul ul ul li{
+		position: static;
+	}
+	/*Los niveles internos ya no se desplegaran cuando se haga hover sobre
+	el elemento padre sino solo cuando se active el checkbox*/
+	nav ul ul li:hover>ul,
+	nav ul li:hover>ul{display: none;}
+	/*Rellenos para los elementos del segundo nivel*/
+	nav ul ul .toggle,
+	nav ul ul a{
+		padding: 0 40px;
+	}
+    
+    nav ul ul li:hover{
+        background-color:#FAD7A0;
+    }
+	/*Rellenos para los elementos del tercer nivel*/
+	nav ul ul ul a{
+		padding: 0 80px;
+	}
+	nav a:hover,
+	nav ul ul ul a{
+		background-color: #FAD7A0;
+	}
+	nav ul li ul li .toggle,
+	nav ul ul a{
+		background-color: #F8C471;
+	}
+    
+    /* --- HOME --- */ 
+
+    .derecha{
+	   width: 100%;
+	}
+
+    .izquierda{
+	   width: 100%;
+    }
+
+    video{
+	   width: 70%;
+	   margin-left: 15%;
+	   margin-right: 15%;
+    }
+
+    h3{
+        text-align: center;
+    }
+
+    .derecha img{
+        width: 50%;
+        margin-top: 5.5%;
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    /* --- CONTACTO ---- */
+    #infor-derecha{
+		width: 100%;
+		color: #7f8c8d;
+	}
+
+	#infor-derecha img{
+		width: 90%;
+		float: right;
+	}
+	
+	#infor-izquierda{
+		width: 100%;
+		display: block;
+	}
+
+	#infor-izquierda img{
+		margin-left: 20%;
+		margin-right: 20%;
+		margin-top: 10%;
+		width: 60%;
+	}
+
+	#infor-izquierda p{
+		padding-left: 10%;
+		padding-right: 5%;
+		padding-bottom: 5%;
+		padding-top: 5%;
+		color: #7f8c8d;
+	}
+    
+    /* --- PERSONAJES --- */
+
+    .characters .personajes{
+        width: 100%;
+    }
+    
+    /* --- ACERCA DE --- */
+    
+    .creadores{
+        width: 100%;
+    }
+    
+    #sec-pie .contenido-pie{
+        width: 100%;
+    }
+    
+    /* --- REGLAS DEL JUEGO --- */
+    
+    div.subapartado{
+	   width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+	   min-height:50px;
+        background-color: #F8C471;
+	   transition: 0.5s;
+    }
+
+    div.titulo{
+	   width: 90%;
+       margin-left: 5%;
+       margin-right: 5%;
+	   background-color: #F8C471;
+       overflow: hidden;
+	   border-bottom: 1px solid #ffffff;
+    }
+
+    p.titulo{
+	   margin:2%;
+       color: white;
+    }
+
+    div.info{
+	   width: 100%;
+	   background-color: #f5f5f5;
+       overflow: hidden;
+	   transition: 0.5s;
+    }
+
+    p.info{
+	   margin:20px;
+	   text-align: center;
+	   color:#4f4f4f;
+    }
+
+    div.subapartado:hover div.info{
+
+	   height:180px;
+        transition: 1s;
+    }    
+}
+
+.tablero img{
+	display: block;
+	margin: 0 auto;
+	width: 60%;
+	height: 20%;
+	padding: 60px;
+	padding-top: 0px;
+}
+
+img#controles{
+	position: relative;
+	display: block;
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin: 10px;
+	top: 0px;
+	right: -70px;
+}
+

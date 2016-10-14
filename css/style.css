@@ -1,0 +1,7 @@
+
+.juego{
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	left: -400px;
+}

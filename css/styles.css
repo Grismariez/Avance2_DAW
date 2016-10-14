@@ -1,0 +1,118 @@
+.derecha{
+	width: 50%;
+	float: right;
+	padding-left: 8%;
+}
+
+.izquierda{
+	width: 50%;
+	float: left;
+}
+
+video{
+	width: 100%;
+	padding: 3%;
+}
+
+h3{
+	text-align: center;
+}
+
+.derecha img{
+	width: 50%;
+	float: left;
+	display: inline-block;
+	margin-top: 5.5%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+#btncomentar{
+	background: #F8C471;
+}
+
+.textnombre{
+
+padding: 0;
+
+}
+
+#comentariovalido{
+	font-size: 12px;
+	color: red;
+	text-align: right;
+}
+
+.miformulario, #storage{
+
+	width: 50%;
+	padding-top: 5%;
+	display: block;
+	height: 30%;
+	position: relative;
+	margin: 0 auto;
+	
+
+}
+
+.panel-default{
+
+}
+
+.btn-danger{
+	width: 40%;
+	margin: 6px;
+}
+
+.btn-warning{
+	margin: 6px;
+	width: 40%;
+	text-align: center;
+}
+
+#storage input{
+	margin: 0 auto;
+}
+
+
+img#cronometro{
+
+	width: 15%;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+
+}
+
+#infor-derecha #nombrevalido{
+
+	font-size: 12px;
+	color: red;
+	text-align: center;
+	padding: 3px;
+}
+
+#infor-derecha #paisvalido{
+
+	font-size: 12px;
+	color: red;
+	text-align: center;
+	padding: 3px;
+}
+
+
+#infor-derecha #correovalido{
+
+	font-size: 12px;
+	color: red;
+	text-align: center;
+	padding: 3px;
+}
+
+.juego{
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	left: -400px;
+}
